@@ -1,0 +1,21 @@
+{
+    "author": "Rene Spisak",
+    "name": "fbclid remover",
+    "version": "1.0.0.0",
+    "description": "Removes the fbclid parameter (Facebook Click Identifier) added by Facebook to all outbound links.",
+    "manifest_version": 2,
+    "icons": {
+        "48": "assets/icon48.png",
+        "128": "assets/icon128.png",
+        "176": "assets/icon176.png"
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "permissions": [
+        "<all_urls>",
+        "webRequest",
+        "webRequestBlocking"
+    ]
+}
